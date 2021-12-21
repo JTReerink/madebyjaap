@@ -10,3 +10,11 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("sidenav-button").style.width = "70px";
 }
+
+function toThigmo() {
+  window.open("./thigmogarden")
+}
+
+function toOAG() {
+  window.open("./OAG")
+}

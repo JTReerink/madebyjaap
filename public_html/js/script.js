@@ -14,5 +14,5 @@ function closeNav() {
 
 thigmo.addEventListener("click", () => {
   console.log("click")
-  window.location.href = "./projecten/thigmo"
+  window.location.href = "./projecten/thigmogarden"
 })
