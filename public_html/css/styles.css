@@ -204,3 +204,12 @@ a {
   outline: none;
   box-shadow: inset 2px 2px 4px rgba(22, 44, 44, 0.8);
 }
+
+#thigmo {
+  cursor: pointer;
+  background-color: #000000;
+}
+
+#thigmo img {
+  width: 50%;
+}
