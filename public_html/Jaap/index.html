@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" media="screen and (min-width: 600px)" href="./css/styles.css">
-  <link rel="stylesheet" media="screen and (max-width: 600px)" href="./css/styles_mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 600px)" href="../css/styles.css">
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="../css/styles_mobile.css">
   
   <title>MadeByJaap</title>
 </head>
@@ -15,16 +15,19 @@
   <!-- SIDENAVS -->
   <div id="sidenavclose" class="sidenavclose" onclick="closeNav()"></div>
   <div id="mySidenav" class="sidenav">
-    <a href="index.html" id="home">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+      <div class="inset-text">&times;</div>
+    </a>
+    <a href="../" id="home">
       <div class="inset-text">Home</div>
     </a>
-    <a href="jaap.html" id="about" style="text-align: left; right: -160px;">
+    <a href="./Jaap" id="about" style="text-align: left; right: -160px;">
       <div class="inset-text">Jaap</div>
     </a>
-    <a href="projecten.html" id="projects">
+    <a href="../projecten/" id="projects">
       <div class="inset-text">Projecten</div>
     </a>
-    <a href="contact.html" id="contact">
+    <a href="../contact/" id="contact">
       <div class="inset-text">Contact</div>
     </a>
   </div>
@@ -32,7 +35,7 @@
 
   <!-- Main Page -->
   <div class="titel">
-    <a href="./" target="_self">
+    <a href="../" target="_self">
       <h1 class="inset-text">Made.By.Jaap.</h1>
     </a>
   </div>
