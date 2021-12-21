@@ -13,7 +13,9 @@
 
 <body>
   <!-- SIDENAVS -->
-  <div id="mySidenav" class="sidenav"><a href="index.html" id="home">
+  <div id="sidenavclose" class="sidenavclose" onclick="closeNav()"></div>
+  <div id="mySidenav" class="sidenav">
+    <a href="index.html" id="home">
       <div class="inset-text">Home</div>
     </a>
     <a href="jaap.html" id="about" style="text-align: left; right: -160px;">
@@ -26,6 +28,7 @@
       <div class="inset-text">Contact</div>
     </a>
   </div>
+  <button class="sidenav-button" id="sidenav-button" onclick="openNav()">&#9776;</button>
 
   <!-- Main Page -->
   <div class="titel">
@@ -42,7 +45,7 @@
       </div>
     </section>
   </main>
-  <script src="/js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
