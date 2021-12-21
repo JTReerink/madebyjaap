@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>De Kantine</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="./media/icons8-puzzle.png" type="image/gif" sizes="16x16">
+  <script src="./js/script.js"></script>
+</head>
+
+<body>
+  <div class="titel">
+    <h1 class="inset-text">De Kantine</h1>
+  </div>
+  <main>
+    <section class="glass">
+      <img src="./media/front.jpg" usemap="#image-map">
+
+      <map name="image-map">
+
+        <area id="kluisKnop" alt="Kluis" title="Kluis"
+          coords="850,0,850,178,780,480,490,579,426,491,448,367,436,322,454,200,467,0" shape="poly">
+        <div id="kluis" class="modal">
+          <div class="modal-content">
+            <span class="close" name="close1">&times;</span>
+            <p>De kluis zit nog op slot</p>
+          </div>
+        </div>
+        <area target="" alt="sleutelkastje" title="sleutelkastje" href="lock.html"
+          coords="159,456,190,591,330,561,284,428,218,427" shape="poly">
+        <area target="_self" alt="links" title="links" href="left.html" coords="99,632,1,0" shape="rect">
+        <area target="_self" alt="rechts" title="rechts" href="right.html" coords="852,0,949,631" shape="rect">
+      </map>
+
+    </section>
+  </main>
+  <script>
+    var Bladen = document.getElementById("kluis");
+    var Bb = document.getElementById("kluisKnop");
+    var spanB = document.getElementsByName("close1")[0];
+    Bb.onclick = function () {
+      Bladen.style.display = "block";
+    }
+    spanB.onclick = function () {
+      Bladen.style.display = "none";
+    }
+    window.onclick = function (event) {
+      if (event.target == Bladen) {
+        Bladen.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>

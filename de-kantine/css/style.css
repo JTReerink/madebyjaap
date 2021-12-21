@@ -1,0 +1,279 @@
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+body {
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 122, 195, 1) 0%,
+    rgba(159, 235, 255, 1) 45%,
+    rgba(190, 168, 255, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 95%;
+}
+
+.glass {
+  width: 70%;
+  min-height: 70vh;
+  vertical-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(147, 255, 237, 0.7),
+    rgba(124, 192, 255, 0.3)
+  );
+  border-radius: 15px;
+  padding-bottom: 40px;
+}
+
+.titel {
+  background: linear-gradient(
+    to right bottom,
+    rgba(245, 255, 253, 0.7),
+    rgba(206, 231, 255, 0.3)
+  );
+  border-style: hidden;
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+  margin-top: 25px;
+  width: 35%;
+  /* kleuren nog aanpassen */
+  box-shadow: 4px 4px 15px rgba(22, 44, 44, 0.8);
+}
+
+.paneel {
+  background: linear-gradient(
+    to right bottom,
+    rgba(245, 255, 253, 0.7),
+    rgba(206, 231, 255, 0.3)
+  );
+  border-style: hidden;
+  border-radius: 15px;
+  width: 45%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  margin-top: 3%;
+  box-shadow: 4px 4px 15px rgba(22, 44, 44, 0.8);
+}
+
+.paneel2 {
+  background: linear-gradient(
+    to right bottom,
+    rgba(245, 255, 253, 0.7),
+    rgba(206, 231, 255, 0.3)
+  );
+  border-style: hidden;
+  border-radius: 15px;
+  width: 80%;
+  padding-top: 1px;
+  padding-bottom: 20px;
+  margin: auto;
+  margin-top: 3%;
+  box-shadow: 4px 4px 15px rgba(22, 44, 44, 0.8);
+}
+
+.inset-text {
+  color: transparent;
+  background-color: #000000;
+  text-shadow: 0px 2px 3px rgba(212, 212, 212, 0.384);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+img {
+  box-shadow: 4px 4px 15px rgba(22, 44, 44, 0.8);
+  margin-top: 30px;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 30px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+h3 {
+  color: black;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+p {
+  font-weight: 500;
+  margin: auto;
+  width: 80%;
+}
+
+area:hover {
+  cursor: pointer;
+}
+
+.button1 {
+  background: linear-gradient(
+    to right bottom,
+    rgba(245, 255, 253, 0.7),
+    rgba(206, 231, 255, 0.3)
+  );
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 4px 4px 15px rgba(22, 44, 44, 0.8);
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25em;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.button1:hover {
+  box-shadow: 2px 2px 4px rgba(22, 44, 44, 0.8);
+}
+
+.button-start {
+  background: linear-gradient(
+    to right bottom,
+    rgba(245, 255, 253, 0.7),
+    rgba(206, 231, 255, 0.3)
+  );
+  padding: 15px 50px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 4px 4px 15px rgba(22, 44, 44, 0.8);
+  font-weight: 900;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25em;
+  margin: 50px;
+  cursor: pointer;
+}
+
+.button-start:hover {
+  box-shadow: 2px 2px 4px rgba(22, 44, 44, 0.8);
+}
+
+.button-start:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 4px rgba(22, 44, 44, 0.8);
+}
+
+#textbox {
+  height: 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 5px;
+}
+
+#textbox:focus {
+  outline: none;
+}
+
+#correct {
+  display: none;
+}
+
+#incorrect {
+  display: none;
+}
+
+#correct2 {
+  display: none;
+}
+
+#incorrect2 {
+  display: none;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 5px outset cyan;
+  width: 35%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Puzzel in foto rechts*/
+.outer-right {
+  background-image: url("https://www.madebyjaap.nl/de-kantine/media/right_screen.jpg"); /* URL van computerscherm */
+  margin: auto;
+  width: 950px;
+  height: 633px;
+  box-shadow: 4px 4px 15px rgba(22, 44, 44, 0.8);
+  margin-top: 30px;
+}
+.inner-right {
+  position: relative;
+  right: 0px;
+  top: 85px;
+  width: 700px;
+  height: 450px;
+}
+
+/* Puzzel in foto links*/
+.outer-left {
+  background-image: url("https://www.madebyjaap.nl/de-kantine/media/left_screen.jpg"); /* URL van computerscherm */
+  margin: auto;
+  width: 950px;
+  height: 633px;
+  box-shadow: 4px 4px 15px rgba(22, 44, 44, 0.8);
+  margin-top: 30px;
+}
+.inner-left {
+  position: relative;
+  right: 0px;
+  top: 80px;
+  width: 780px;
+  height: 450px;
+}

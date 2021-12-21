@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(/media/phonesize-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 95%;
+}
+
+.glass {
+  background: rgb(72, 172, 255);
+  width: 70%;
+  min-height: 70vh;
+  vertical-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(147, 255, 237, 0.7),
+    rgba(124, 192, 255, 0.3)
+  );
+  border-radius: 15px;
+  padding-bottom: 40px;
+  box-shadow: 4px 4px 15px rgba(22, 44, 44, 0.8);
+}
+
+.paneel {
+  background: linear-gradient(
+    to right bottom,
+    rgba(245, 255, 253, 0.7),
+    rgba(206, 231, 255, 0.3)
+  );
+  border-style: hidden;
+  border-radius: 15px;
+  width: 45%;
+  padding-top: 1px;
+  padding-bottom: 20px;
+  margin: auto;
+  margin-top: 3%;
+  box-shadow: 4px 4px 15px rgba(22, 44, 44, 0.8);
+}
+
+.inset-text {
+  color: transparent;
+  background-color: #000000;
+  text-shadow: 0px 2px 3px rgba(212, 212, 212, 0.384);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  font-weight: 900;
+}
+
+/* De sidenavs */
+.sidenav-button {
+  position: fixed;
+  font-size: 3em;
+  background: linear-gradient(
+    to right bottom,
+    rgba(245, 255, 253, 0.7),
+    rgba(206, 231, 255, 0.3)
+  );
+  border-style: hidden;
+  border-radius: 15px;
+  right: 0;
+  top: 40%;
+  transition: 0.5s;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: linear-gradient(
+    to right bottom,
+    rgba(95, 95, 95, 0.877),
+    rgba(77, 77, 77, 0.781)
+  );
+  overflow-x: hidden;
+  transition: 0.5s;
+  justify-content: center;
+}
+
+.sidenav a {
+  display: block;
+  text-decoration: none; /* Remove underline */
+  padding: 15px; /* 15px padding */
+  font-size: 1.25em; /* Increase font size */
+}
+
+.sidenav a:hover {
+  color: #000;
+}
+
+.sidenavclose {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+  margin-left: 5px;
+  margin-top: 35px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* de Main content  */
+.titel {
+  background: linear-gradient(
+    to right bottom,
+    rgba(245, 255, 253, 0.7),
+    rgba(206, 231, 255, 0.3)
+  );
+  border-style: hidden;
+  border-radius: 15px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 25px;
+  width: 80%;
+  /* kleuren nog aanpassen */
+  box-shadow: 4px 4px 15px rgba(22, 44, 44, 0.8);
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 1.875em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  text-align: center;
+}
+
+h3 {
+  color: black;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+p {
+  font-weight: 500;
+  margin: auto;
+  width: 80%;
+  padding: 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button-start {
+  background: linear-gradient(
+    to right bottom,
+    rgba(245, 255, 253, 0.7),
+    rgba(206, 231, 255, 0.3)
+  );
+  padding: 15px 40px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 4px 4px 15px rgba(22, 44, 44, 0.8);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.button-start:hover {
+  box-shadow: 2px 2px 4px rgba(22, 44, 44, 0.8);
+}
+
+.button-start:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 4px rgba(22, 44, 44, 0.8);
+}
