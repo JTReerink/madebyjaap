@@ -1,61 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" media="screen and (min-width: 600px)" href="./css/styles.css">
-  <link rel="stylesheet" media="screen and (max-width: 600px)" href="./css/styles_mobile.css">
-  <title>MadeByJaap</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+    <link rel="stylesheet" href="./styles/loader.css">
+    <title>Thigmo Garden</title>
 </head>
-
 <body>
-  <!-- SIDENAVS -->
-  <div id="sidenavclose" class="sidenavclose" onclick="closeNav()"></div>
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-      <div class="inset-text">&times;</div>
-    </a>
-    <a href="./" id="home" style="text-align: left; right: -160px;">
-      <div class="inset-text">Home</div>
-    </a>
-    <a href="./Jaap/" id="about">
-      <div class="inset-text">Jaap</div>
-    </a>
-    <a href="./projecten/" id="projects">
-      <div class="inset-text">Projecten</div>
-    </a>
-    <a href="./contact/" id="contact">
-      <div class="inset-text">Contact</div>
-    </a>
-  </div>
-  <button class="sidenav-button" id="sidenav-button" onclick="openNav()">&#9776;</button>
+    
+    <div id="center">
+        <img src="./media/Logo_Gradient_MetBloem.svg" alt="Click Me" id="load">
+        <!-- <button id="load">click me</button> -->
+        <div class="countHolder">
+            <img id="tienTal" src="./media/0-9.png" alt="">
+            <img id="eenHeid" src="./media/2x0-9.png" alt="">`
+            <p id="procent">&#37;</p>
+        </div>
+        <p id="loading">Loading...</p>
+    </div>
 
-  <!-- Main Page -->
-  <div class="titel">
-    <a href="./" target="_self">
-      <h1 class="inset-text">Made.By.Jaap.</h1>
-    </a>
-  </div>
-  <main>
-    <section class="glass">
-      <div class="paneel">
-        <p>
-          Welkom op mijn portfolio site. Ik ben er nog druk mee bezig, maar kijk vooral rond.
-          Aan de rechterkant vind je de navigatie.
-        </p>
-      </div>
-
-      <button class="paneel" id="thigmo">
-        <img src="./projecten/thigmogarden/media/Logo_Gradient_MetBloem.svg" alt="">
-        <p>
-          Voor <b>Thigmo Garden</b> klik hier.
-        </p>
-      </button>
-    </section>
-  </main>
-  <script src="./js/script.js"></script>
+    <script src="./js/loader.js"></script>
 </body>
-
 </html>
