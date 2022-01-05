@@ -1,21 +1,67 @@
 * {
-    font-family: "Times New Roman", serif;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
 }
 
-body {
-    background-color: black;
+html, body {
+    height: 100%;
 }
+
+  
+/* BACKGROUNDS */
+
+#page1, #page2, #page3 {
+      background-color: black;
+}
+  
+#page1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#page2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 100%;
+}
+
+#page3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 200%;
+}
+
 
 h1 {
     font-size: 8.5vw;
     color: white;
 }
 
-p, button {
-    font-size: 20px;
+h3 {
+    font-size: 2.7vw;
+    color: white;
+    font-weight: 100;
 }
 
-/* begin van nav-bar */
+p {
+    font-size: 1.2vw;
+    color: white;
+}
+
+sup {
+    position: relative;
+    font-size: 50%;
+    top: .3em;
+}
+
+
+/* NAV-BAR */
 
 #navbar {
     padding: 5px 10px;
@@ -31,7 +77,6 @@ p, button {
 }
 
 #navbar #logo {
-    background-color: black;
     float: left;
     text-align: center;
     width: 5%;
@@ -85,8 +130,12 @@ p, button {
     opacity: 1;
 }
 
-/* eind van nav-bar */
-/* begin van middle part */
+/* END NAV-BAR */
+
+
+
+
+/* PAGE1 INHOUD */
 
 #middle #thigmo {
     position: absolute;
@@ -99,8 +148,36 @@ p, button {
     -webkit-text-fill-color: transparent;
 }
 
+#middle #showDate {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    margin: .8% 0 0 -0.5%;
+    z-index: 3;
+}
 
-/* Bloemen */
+#middle #garden {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    right: 10%;
+    margin: -21.3% 1.5% 0 0;
+}
+
+#middle #mainSubtext {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    right: 10%;
+    margin: -11% 1.5% 0 0;
+    text-align: end;
+    font-weight: lighter;
+}
+
+/* bloemen */
 #middle #flowers {
     position: relative;
     display: flex;
@@ -112,7 +189,7 @@ p, button {
     z-index: 2;
 }
 
-/* 'plan visit' Button */
+/* 'plan visit' button */
 #middle #planVisit {
     position: relative;
     z-index: 3;
@@ -122,7 +199,7 @@ p, button {
     background-color: rgba(175, 175, 175, 0.329);
     backdrop-filter: blur(10px);
     color: white;
-    font-size: 16px;
+    font-size: 1vw;
     padding: 10px 45px;
     cursor: pointer;
     border: solid 0.5px white;
