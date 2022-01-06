@@ -143,7 +143,7 @@ main {
   );
 }
 
-.closebtn .inset-text {
+.closebtn {
   display: none;
 }
 
