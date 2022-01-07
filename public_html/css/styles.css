@@ -176,6 +176,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .button {
   background: linear-gradient(
     to right bottom,
@@ -192,7 +196,6 @@ a {
   display: inline-block;
   font-size: 20px;
   margin: 4px 2px;
-  cursor: pointer;
   margin-top: 50px;
 }
 
