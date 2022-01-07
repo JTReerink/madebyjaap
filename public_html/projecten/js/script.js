@@ -18,3 +18,7 @@ function toThigmo() {
 function toOAG() {
   window.open("./OAG")
 }
+
+function toFeelingFeedback() {
+  window.open("./feeling-feedback")
+}
